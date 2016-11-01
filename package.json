@@ -1,0 +1,16 @@
+{
+  "name": "LightMedia",
+  "version": "0.0.0",
+  "description": "Presentation software",
+  "main": "Main.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "private":true,
+  "author": "Jesse Shaffer",
+  "devDependencies": {
+    "electron": "~1.4.4",
+    "gulp": "~3.9.1",
+    "jspm": "~0.16.47"
+  }
+}
