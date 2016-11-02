@@ -5,16 +5,16 @@
             "name": "Launch",
             "type": "node",
             "request": "launch",
-            "program": "${workspaceRoot}/Main.js",
+            "program": "${workspaceRoot}/src/Main.js",
             "stopOnEntry": false,
             "args": [],
             "cwd": "${workspaceRoot}",
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd",
             "runtimeArgs": [
-                "${workspaceRoot}",
-                "--enable-logging"
+                ".",
+                "--enable-logging "
             ],
-            "env": {},
+            "env": {"DEBUG":true},
             "externalConsole": false,
             "sourceMaps": false,
             "outDir": null

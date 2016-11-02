@@ -2,16 +2,35 @@
   "name": "LightMedia",
   "version": "0.0.0",
   "description": "Presentation software",
-  "main": "Main.js",
+  "main": "src/Main.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "electron ."
   },
   "private": true,
   "author": "Jesse Shaffer",
   "devDependencies": {
-    "electron": "~1.4.4",
-    "express": "^4.14.0",
-    "gulp": "~3.9.1",
-    "jspm": "~0.16.47"
+    "babel-plugin-transform-class-properties": "^6.18.0",
+    "babel-preset-es2016-node5": "^1.1.2",
+    "electron-connect": "^0.6.0",
+    "electron-packager": "^8.2.0",
+    "electron-prebuilt-compile": "^1.4.5",
+    "jspm": "^0.16.47"
+  },
+  "dependencies": {
+    "lowdb": "^0.14.0"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src",
+      "packages": "src/lib/jspm"
+    },
+    "dependencies": {
+      "aurelia-framework": "npm:aurelia-framework@^1.0.7"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
   }
 }
